@@ -49,13 +49,11 @@ pipeline {
                 sh 'docker build -t jenkins:v1 .'
             }
         }
-
-   
+    }
 
     post {
         always {
             cleanWs()
         }
     }
-}
 }
